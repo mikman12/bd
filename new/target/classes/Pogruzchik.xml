@@ -1,0 +1,13 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	
+<mapper namespace = "Pogruzchik">
+
+ 
+    <resultMap id = "result" type = "Pogruzchik">
+    </resultMap>
+   	<select id = "getAll" parameterType = "int" resultMap = "result">
+    SELECT * FROM pogruzchik  WHERE pogruzchik.id = #{id}
+   </select>
+</mapper>
